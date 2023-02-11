@@ -1,8 +1,14 @@
-Desenvolvedor SP
-================
+# Desenvolvedor SP
+
+Para rodar os codigos, use o comando:
+
+`dotnet run`
+
+## Desafio 1 
 
 1) Observe o trecho de código abaixo:
 
+´´´
 int INDICE = 13, SOMA = 0, K = 0;
 
 enquanto K < INDICE faça
@@ -12,10 +18,13 @@ SOMA = SOMA + K;
 }
 
 imprimir(SOMA);
+´´´
+Ao final do processamento, qual será o valor da variável SOMA? **A variável SOMA irá valer 91 ao final
+laço enquanto.**
 
-Ao final do processamento, qual será o valor da variável SOMA? A variável SOMA irá valer 91 ao final
-laço enquanto.
+### Teste de Mesa
 
+```
 PASSO UM: K (0) < INDICE (13) = true | K = 1 | Soma = 1 | 
 PASSO DOIS: K (1) < INDICE (13) = true | K = 2 | Soma = 3 | 
 PASSO TRÊS: K (2) < INDICE (13) = true | K = 3 | Soma = 6 | 
@@ -30,3 +39,10 @@ PASSO ONZE: K (10) < INDICE = true | K = 11 | SOMA = 66 |
 PASSO DOZE: K (11 < INDICE) = true | K = 12 | SOMA = 78 | 
 PASSO TREZE: K (12) < INDICE = true | K = 13 | SOMA = 91 | 
 PASSO CATORZE: K (13) < INDICE = false
+```
+
+## Desafio 2
+(2) Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde, informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.
+
+IMPORTANTE:
+Esse número pode ser informado através de qualquer entrada de sua preferência ou pode ser previamente definido no código;
