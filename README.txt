@@ -1,0 +1,32 @@
+Desenvolvedor SP
+================
+
+1) Observe o trecho de código abaixo:
+
+int INDICE = 13, SOMA = 0, K = 0;
+
+enquanto K < INDICE faça
+{
+K = K + 1;
+SOMA = SOMA + K;
+}
+
+imprimir(SOMA);
+
+Ao final do processamento, qual será o valor da variável SOMA? A variável SOMA irá valer 91 ao final
+laço enquanto.
+
+PASSO UM: K (0) < INDICE (13) = true | K = 1 | Soma = 1 | 
+PASSO DOIS: K (1) < INDICE (13) = true | K = 2 | Soma = 3 | 
+PASSO TRÊS: K (2) < INDICE (13) = true | K = 3 | Soma = 6 | 
+PASSO QUATRO: K (3) < INDICE (13) = true | K = 4 | Soma = 10 | 
+PASSO CINCO: K (4) < INDICE (13) = true | K = 5 | Soma = 15 | 
+PASSO SEIS: K (5) < INDICE (13) = true | K = 6 | Soma = 21 | 
+PASSO SETE: K (6) < INDICE (13) = true | K = 7 | Soma = 28 | 
+PASSO OITO: K (7) < INDICE = true | K = 8 | SOMA = 36 | 
+PASSO NOVE: K (8) < INDICE = true | K = 9 | SOMA = 45 |
+PASSO DEZ: K(9) < INDICE = true | K = 10 | SOMA = 55 | 
+PASSO ONZE: K (10) < INDICE = true | K = 11 | SOMA = 66 | 
+PASSO DOZE: K (11 < INDICE) = true | K = 12 | SOMA = 78 | 
+PASSO TREZE: K (12) < INDICE = true | K = 13 | SOMA = 91 | 
+PASSO CATORZE: K (13) < INDICE = false
