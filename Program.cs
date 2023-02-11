@@ -5,7 +5,7 @@ namespace Main
 {
   class Program
   {
-    static void Main(string[] args) 
+    public static void Main(string[] args) 
     {
       Console.WriteLine("============== Exercicio 1 ===================");
       int INDICE = 13, SOMA = 0, K = 0;
@@ -16,11 +16,13 @@ namespace Main
       }
       Console.WriteLine(SOMA);
       Console.WriteLine(" ");
+
       Console.WriteLine("============== Exercicio 2 ===================");
       Console.WriteLine("Digite um numero:");
       int numero = int.Parse(Console.ReadLine());
-      fibonacci(numero);
+      Fibonacci(numero);
       Console.WriteLine(" ");
+
       Console.WriteLine("============== Exercicio 3 ===================");
       List<Faturamento> faturamentos = new List<Faturamento>();
       List<double> valores = new List<double>();
@@ -89,6 +91,7 @@ namespace Main
 
       Console.WriteLine("A quantidade de dias que o faturamento superou a média foram: " + qtdDias);
       Console.WriteLine(" ");
+
       Console.WriteLine("============== Exercicio 4 ===================");
       List<Distribuidora> faturamentoDistribuidora = new List<Distribuidora>();
       faturamentoDistribuidora.Add(new Distribuidora("SP", 67.83643)); // SP
@@ -109,9 +112,18 @@ namespace Main
         Console.WriteLine("O percentual do estado " + elemento.Uf + " é {0:0}%", (elemento.Faturamento /somaDistribuidora)*100);
       }
       Console.WriteLine(" ");
+      Console.WriteLine("============== Exercicio 5 ===================");
+      Console.WriteLine("Digite uma palavra ou frase:");
+      string palavraFrase = Console.ReadLine();
+
+      string revertida = ReverteCaracteresDaString(palavraFrase);
+
+      Console.WriteLine("Palavra original: " + palavraFrase);
+      Console.WriteLine("Palavra ou frase revertida: " + revertida);
+
     }
 
-    static void fibonacci(int num) 
+    public static void Fibonacci(int num) 
     {
       int primeiroNumero = 0;
       int segundoNumero = 1;
@@ -136,6 +148,20 @@ namespace Main
       } else {
         Console.WriteLine("O numero " + num + " não pertence a sequência Fibonacci");
       }
+    }
+
+    public static string ReverteCaracteresDaString(string s)
+    {
+      char[] arrayDeCaracteres = s.ToCharArray();
+      int tamanho = s.Length - 1;
+      string stringRevertida = String.Empty;
+
+      for (int i = tamanho; i >= 0; i--)
+      {
+         stringRevertida += arrayDeCaracteres[i]; 
+      }
+
+      return stringRevertida;
     }
   }
 }
