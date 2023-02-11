@@ -6,9 +6,9 @@ Para rodar os codigos, use o comando:
 
 ## Desafio 1 
 
-1) Observe o trecho de código abaixo:
+(1) Observe o trecho de código abaixo:
 
-´´´
+```
 int INDICE = 13, SOMA = 0, K = 0;
 
 enquanto K < INDICE faça
@@ -18,7 +18,8 @@ SOMA = SOMA + K;
 }
 
 imprimir(SOMA);
-´´´
+```
+
 Ao final do processamento, qual será o valor da variável SOMA? **A variável SOMA irá valer 91 ao final
 laço enquanto.**
 
@@ -46,3 +47,13 @@ PASSO CATORZE: K (13) < INDICE = false
 
 IMPORTANTE:
 Esse número pode ser informado através de qualquer entrada de sua preferência ou pode ser previamente definido no código;
+
+## Desafio 3
+(3) Dado um vetor que guarda o valor de faturamento diário de uma distribuidora, faça um programa, na linguagem que desejar, que calcule e retorne:
+• O menor valor de faturamento ocorrido em um dia do mês;
+• O maior valor de faturamento ocorrido em um dia do mês;
+• Número de dias no mês em que o valor de faturamento diário foi superior à média mensal.
+
+IMPORTANTE:
+a) Usar o json ou xml disponível como fonte dos dados do faturamento mensal;
+b) Podem existir dias sem faturamento, como nos finais de semana e feriados. Estes dias devem ser ignorados no cálculo da média;
