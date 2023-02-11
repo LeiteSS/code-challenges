@@ -15,12 +15,12 @@ namespace Main
         SOMA = SOMA + K;
       }
       Console.WriteLine(SOMA);
-
+      Console.WriteLine(" ");
       Console.WriteLine("============== Exercicio 2 ===================");
       Console.WriteLine("Digite um numero:");
       int numero = int.Parse(Console.ReadLine());
       fibonacci(numero);
-
+      Console.WriteLine(" ");
       Console.WriteLine("============== Exercicio 3 ===================");
       List<Faturamento> faturamentos = new List<Faturamento>();
       List<double> valores = new List<double>();
@@ -88,6 +88,27 @@ namespace Main
       }
 
       Console.WriteLine("A quantidade de dias que o faturamento superou a média foram: " + qtdDias);
+      Console.WriteLine(" ");
+      Console.WriteLine("============== Exercicio 4 ===================");
+      List<Distribuidora> faturamentoDistribuidora = new List<Distribuidora>();
+      faturamentoDistribuidora.Add(new Distribuidora("SP", 67.83643)); // SP
+      faturamentoDistribuidora.Add(new Distribuidora("RJ", 36.67866)); // RJ
+      faturamentoDistribuidora.Add(new Distribuidora("MG", 29.22988)); // MG
+      faturamentoDistribuidora.Add(new Distribuidora("ES", 27.16548)); // ES
+      faturamentoDistribuidora.Add(new Distribuidora("Outros", 19.84953)); // Outros
+      
+      double somaDistribuidora = 0;
+      foreach(var elemento in faturamentoDistribuidora)
+      {
+        somaDistribuidora = somaDistribuidora + elemento.Faturamento;
+      }
+
+      foreach(var elemento in faturamentoDistribuidora)
+      {
+        
+        Console.WriteLine("O percentual do estado " + elemento.Uf + " é {0:0}%", (elemento.Faturamento /somaDistribuidora)*100);
+      }
+      Console.WriteLine(" ");
     }
 
     static void fibonacci(int num) 
